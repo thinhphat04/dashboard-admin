@@ -1,0 +1,10 @@
+/node_modules
+
+/.env
+.env
+.env.prod
+.env.dev
+
+/public/uploads
+
+package-lock.json
