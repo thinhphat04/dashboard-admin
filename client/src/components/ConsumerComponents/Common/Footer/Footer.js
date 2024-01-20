@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="footer__col">
             <div className="footer__col-group">
               <label className="footer__label">
-                Tìm chi nhánh cửa hàng ShopTECH
+              Find Clinic Online store branches
               </label>
               <iframe
                 className="footer__map"
@@ -25,7 +25,7 @@ const Footer = () => {
             </div>
             <div className="footer__col-group">
               <label className="footer__label">
-                Những phương thức thanh toán
+              Payment methods
               </label>
               <img
                 src="https://image.cellphones.com.vn/x35/media/logo/payment/moca-logo.png"
@@ -87,34 +87,34 @@ const Footer = () => {
           <div className="footer__col">
             <div className="footer__col-group">
               <label className="footer__label">
-                Thông tin, chính sách và điều khoản sử dụng
+              Information, policies and terms of use
               </label>
               <a href="/policy" className="footer__link">
-                Mua hàng và thanh toán
+              Purchase and payment
               </a>
               <a href="/policy" className="footer__link">
-                Mua trả góp sản phẩm
+              Buy products in installments
               </a>
               <a href="/policy" className="footer__link">
-                Tra cứu thông tin đơn hàng
+              Look up order information
               </a>
               <a href="/policy" className="footer__link">
-                Tra cứu ưu đãi
+              Look up deals
               </a>
               <a href="/policy" className="footer__link">
-                Tra cứu thông tin bảo hành
+              Look up warranty information
               </a>
               <a href="/policy" className="footer__link">
-                Tra cứu hóa đơn điện tử
+              Look up electronic invoices
               </a>
               <a href="/policy" className="footer__link">
-                Chính sách bảo hành
+              Warranty Policy
               </a>
               <a href="/policy" className="footer__link">
-                Chính sách hậu mãi
+              After-sales policy
               </a>
               <a href="/policy" className="footer__link">
-                Điều khoản sử dụng
+              Terms of use
               </a>
             </div>
           </div>
@@ -122,13 +122,13 @@ const Footer = () => {
           <div className="footer__col">
             <div className="footer__col-group">
               <label className="footer__label">
-                Tổng đài viên hỗ trợ 24/7{' '}
+              Operator support 24/7{' '}
                 <span style={{ fontWeight: '300', color: 'red' }}>
-                  (Miễn phí tư vấn)
+                  (Free consultation)
                 </span>
               </label>
               <div href="/" className="footer__text">
-                <p className="footer__text-title ">Hỗ trợ mua hàng:</p>
+                <p className="footer__text-title ">Purchase support:</p>
                 <span
                   className="footer__text-info "
                   style={{
@@ -142,7 +142,7 @@ const Footer = () => {
                 <span className="hide-on-mobile">(24/7)</span>
               </div>
               <div href="/" className="footer__text">
-                <p className="footer__text-title ">Hỗ trợ kỹ thuật:</p>
+                <p className="footer__text-title ">Technical assistance:</p>
                 <span
                   style={{
                     fontWeight: 'bold',
@@ -152,10 +152,10 @@ const Footer = () => {
                 >
                   1800 1234
                 </span>
-                <span className="hide-on-mobile">(Giờ hành chính)</span>
+                <span className="hide-on-mobile">(Time in works)</span>
               </div>
               <div href="/" className="footer__text">
-                <p className="footer__text-title ">Giải quyết khiếu nại:</p>
+                <p className="footer__text-title ">Resolve complaints:</p>
                 <span
                   style={{
                     fontWeight: 'bold',
@@ -168,7 +168,7 @@ const Footer = () => {
                 <span className="hide-on-mobile">(24/7)</span>
               </div>
               <div href="/" className="footer__text">
-                <p className="footer__text-title ">Bảo hành sản phẩm:</p>
+                <p className="footer__text-title ">Product warranty:</p>
                 <span
                   style={{
                     fontWeight: 'bold',
@@ -178,10 +178,10 @@ const Footer = () => {
                 >
                   1800 3234
                 </span>
-                <span className="hide-on-mobile">(Giờ hành chính)</span>
+                <span className="hide-on-mobile">(Time in works)</span>
               </div>
               <div href="/" className="footer__text">
-                <p className="footer__text-title ">Vấn đề khác:</p>
+                <p className="footer__text-title ">Other problems:</p>
                 <span
                   style={{
                     fontWeight: 'bold',
@@ -191,7 +191,7 @@ const Footer = () => {
                 >
                   1800 3234
                 </span>
-                <span className="hide-on-mobile">(Giờ hành chính)</span>
+                <span className="hide-on-mobile">(Time in works)</span>
               </div>
             </div>
           </div>
@@ -199,7 +199,7 @@ const Footer = () => {
           <div className="footer__col">
             <div className="footer__col-group">
               <label className="footer__label">
-                KẾT NỐI VỚI CHÚNG TÔI - ShopTECH BESIDE YOU
+              CONNECT WITH US - CLINIC ONLINE BESIDE YOU
               </label>
               <img
                 src="https://image.cellphones.com.vn/44x/media/logo/social/cellphones-facebook.png"
@@ -242,7 +242,7 @@ const Footer = () => {
 
             <div className="footer__col-group footer__col-group-cer">
               <label className="footer__label" style={{ width: '100%' }}>
-                Chứng nhận
+              Certification
               </label>
               <img
                 src="https://fptshop.com.vn/Content/v4/images/ft-img1.png?v=1"

@@ -13,7 +13,7 @@ const OrderLookup = () => {
   const [countTotalPrice, setCountTotalPrice] = useState();
 
   useEffect(() => {
-    document.title = 'ShopTECH | Tra cứu đơn hàng';
+    document.title = 'ShopTECH | LOOK UP ORDERS';
 
     // show thông tin tổng tiền giỏ hàng
     let countTotalPriceOld = 0;
@@ -63,8 +63,8 @@ const OrderLookup = () => {
       <div className="container">
         <div className="grid wide">
           <div className="order-lookup__box">
-            <label className="order-lookup__box-header">TRA CỨU ĐƠN HÀNG</label>
-            <label className="order-lookup__box-label">Số điện thoại</label>
+            <label className="order-lookup__box-header">LOOK UP ORDERS</label>
+            <label className="order-lookup__box-label">Phone number</label>
             <input
               style={{ fontWeight: 'bold', color: 'green' }}
               className="order-lookup__box-input"
@@ -75,7 +75,7 @@ const OrderLookup = () => {
                 setPhone(e.target.value);
               }}
             ></input>
-            <label className="order-lookup__box-label">Mã đơn hàng</label>
+            <label className="order-lookup__box-label">Code orders</label>
 
             <input
               style={{ textTransform: 'uppercase' }}
@@ -88,7 +88,7 @@ const OrderLookup = () => {
               }}
             ></input>
             <button className="order-lookup__box-btn" onClick={handleLookup}>
-              TRA CỨU
+              SEARCH
             </button>
           </div>
 
@@ -134,7 +134,7 @@ const OrderLookup = () => {
                     </li>
                     <li className="cart-confirm__item">
                       <label className="cart-confirm__label">
-                        Số điện thoại:
+                      Phone number:
                       </label>
                       <p
                         className="cart-confirm__data"
@@ -301,9 +301,8 @@ const OrderLookup = () => {
       </div>
       <Footer />
       <p className="app-copyright">
-        ©️ Bản quyền thuộc ShopTECH - năm 2023 <br />
-        Địa chỉ: 70 Tô Ký, phường Tân Chánh Hiệp. Quận 12, Thành phố Hồ Chí
-        Minh.
+      ©️ Copyright belongs to Clinic Online - 2023 <br />
+      Address: 391 Nam Ky Khoi Nghia, Vo Thi Sau ward. District 3, Ho Chi Minh City.
       </p>
     </>
   );

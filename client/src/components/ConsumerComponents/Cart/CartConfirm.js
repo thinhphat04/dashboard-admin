@@ -83,14 +83,14 @@ const CartConfirm = () => {
                 <i className="cart__btn-cancel-icon fa fa-arrow-left"></i>Trở
                 lại trang trước
               </button>
-              <h1 className="cart__title">XÁC NHẬN ĐƠN HÀNG</h1>
+              <h1 className="cart__title">ORDER CONFIRMATION</h1>
 
               <ul className="cart-confirm__list-info">
                 <li className="cart-confirm__item">
                   <label className="cart-confirm__label">
-                    Mã đơn hàng của bạn:
+                  Code orders:
                     <span className="cart-confirm__label-span">
-                      (Hãy lưu lại mã đơn hàng nhé)
+                      (Save Code order)
                     </span>
                   </label>
                   <p className="cart-confirm__data" style={{ color: 'red' }}>
@@ -98,7 +98,7 @@ const CartConfirm = () => {
                   </p>
                 </li>
                 <li className="cart-confirm__item">
-                  <label className="cart-confirm__label">Người đặt hàng:</label>
+                  <label className="cart-confirm__label">Orderer:</label>
                   <p className="cart-confirm__data" style={{ color: 'green' }}>
                     {window.localStorage.getItem('fullnameCache')}
                   </p>
@@ -110,7 +110,7 @@ const CartConfirm = () => {
                   </p>
                 </li>
                 <li className="cart-confirm__item">
-                  <label className="cart-confirm__label">Số điện thoại:</label>
+                  <label className="cart-confirm__label">Phone number:</label>
                   <p className="cart-confirm__data">
                     {window.localStorage.getItem('phoneCache')}
                   </p>
@@ -149,10 +149,10 @@ const CartConfirm = () => {
 
               <ul className="cart-confirm__list">
                 <label className="detail-price__header">
-                  Chi tiết sản phẩm
+                Product details
                 </label>
                 {loading ? (
-                  <p>Đang kết nối đến server ... </p>
+                  <p>Connecting to the server... </p>
                 ) : (
                   cartUser.map((product, i) => (
                     <li className="cart-confirm__item-product" key={i}>
@@ -183,11 +183,11 @@ const CartConfirm = () => {
 
               <ul className="cart-confirm__list">
                 <label className="detail-price__header">
-                  Chi tiết đơn hàng
+                Order details
                 </label>
                 <li className="detail-price__item">
                   <label className="detail-price__item-label">
-                    Tổng giá trị giỏ hàng:{' '}
+                  Total cart value:{' '}
                   </label>
                   <span className="detail-price__item-price">
                     {Number(totalPriceOld).toLocaleString()} đ
@@ -195,7 +195,7 @@ const CartConfirm = () => {
                 </li>
 
                 {loading ? (
-                  <p>Đang kết nối đến server ... </p>
+                  <p>Connecting to the server... </p>
                 ) : (
                   cartUser.map((product, i) => (
                     <li className="detail-price__item" key={i}>
@@ -284,7 +284,7 @@ const CartConfirm = () => {
                   className="cart-info__input-radio-describe"
                   style={{ color: 'red', fontWeight: 'bold' }}
                 >
-                  Vui lòng xác nhận thông tin bạn nhập vào là chính xác
+                  Please confirm the information you entered is correct
                 </label>
               </div>
             </div>
@@ -297,7 +297,7 @@ const CartConfirm = () => {
         >
           <li className="block-process__item block-process__item--active">
             <i className="block-process__item-icon block-process__item-icon--active fa fa-shopping-cart "></i>
-            <label className="block-process__item-label">Chọn sản phẩm</label>
+            <label className="block-process__item-label">Select product</label>
           </li>
           <i className="block-process__item-arrow block-process__item-arrow--active">
             -
@@ -306,7 +306,7 @@ const CartConfirm = () => {
           <li className="block-process__item block-process__item--active">
             <i className="block-process__item-icon fa fa-user block-process__item-icon--active"></i>
             <label className="block-process__item-label">
-              Thông tin đơn hàng
+            Information line
             </label>
           </li>
           <i className="block-process__item-arrow block-process__item-arrow--active">
@@ -315,7 +315,7 @@ const CartConfirm = () => {
 
           <li className="block-process__item block-process__item--active">
             <i className="block-process__item-icon fa fa-tag block-process__item-icon--active"></i>
-            <label className="block-process__item-label ">Mã khuyến mãi</label>
+            <label className="block-process__item-label ">Promotional code</label>
           </li>
           <i className="block-process__item-arrow block-process__item-arrow--active">
             -
@@ -324,7 +324,7 @@ const CartConfirm = () => {
           <li className="block-process__item block-process__item--active">
             <i className="block-process__item-icon fa fa-check block-process__item-icon--active"></i>
             <label className="block-process__item-label">
-              Xác nhận đơn hàng
+            Order confirmation
             </label>
           </li>
           <i className="block-process__item-arrow block-process__item-arrow--active">
@@ -333,7 +333,7 @@ const CartConfirm = () => {
 
           <li className="block-process__item">
             <i className="block-process__item-icon fa fa-credit-card"></i>
-            <label className="block-process__item-label">Thanh toán</label>
+            <label className="block-process__item-label">Payment </label>
           </li>
         </ul>
 
@@ -345,7 +345,7 @@ const CartConfirm = () => {
                 handleNextStep();
               }}
             >
-              Xác nhận & Tiến hành thanh toán
+              Confirm & Proceed to payment
             </button>
             <button
               className="cart__control-btn cart__control-btn--more"
@@ -354,7 +354,7 @@ const CartConfirm = () => {
                 window.location.href = '/cart/';
               }}
             >
-              Quay lại trang thông tin giỏ hàng
+              Return to the shopping cart information page
             </button>
           </div>
         </div>

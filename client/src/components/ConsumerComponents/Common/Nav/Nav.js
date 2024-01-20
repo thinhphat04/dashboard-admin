@@ -59,14 +59,14 @@ const Nav = () => {
             >
               <i className="header--btn-icon fa-solid fa-phone"></i>
               <p className="header--btn-name">
-                Hỗ trợ
+                Support
                 <span className="header--btn-describe">1800.4433</span>
               </p>
             </a>
             <div className="header-search">
               <input
                 className="header-search__input"
-                placeholder="Tìm kiếm sản phẩm..."
+                placeholder="Search product..."
                 onChange={(e) => {
                   setKeySearch(e.target.value);
                 }}
@@ -75,7 +75,7 @@ const Nav = () => {
                 className="header-search__button"
                 onClick={(e) => {
                   if (keySearch === '') {
-                    alert('Vui lòng điền từ khóa cần tìm!');
+                    alert('Please enter the keyword you want to search for!');
                     return;
                   }
                   handleLoadingPage(1);
@@ -96,7 +96,7 @@ const Nav = () => {
               >
                 <div className="header-btn__red-dot">{countQuantity || 0}</div>
                 <i className="header--btn-icon fa-solid fa-shopping-cart"></i>
-                <p className="header--btn-name hide-on-mobile">Giỏ hàng</p>
+                <p className="header--btn-name hide-on-mobile">Cart</p>
               </button>
 
               <button
@@ -113,7 +113,7 @@ const Nav = () => {
                 }}
               >
                 <i className="header--btn-icon fa-solid fa-user"></i>
-                <p className="header--btn-name">Thành viên</p>
+                <p className="header--btn-name">Member</p>
               </button>
 
               <button
@@ -124,7 +124,7 @@ const Nav = () => {
                 }}
               >
                 <i className="header--btn-icon fa-solid fa-history"></i>
-                <p className="header--btn-name">Đơn hàng</p>
+                <p className="header--btn-name">Order</p>
               </button>
               <button
                 className="header-btn hide-on-mobile"
@@ -134,7 +134,7 @@ const Nav = () => {
                 }}
               >
                 <i className="header--btn-icon fa-solid fa-question"></i>
-                <p className="header--btn-name">Liên hệ</p>
+                <p className="header--btn-name">Contact</p>
               </button>
             </div>
 
@@ -146,14 +146,14 @@ const Nav = () => {
                   window.location.href = '/account';
                 }}
               >
-                Tài khoản của bạn
+                Your account
               </li>
               <li
                 className="nav__option-item"
                 style={{ color: 'red' }}
                 onClick={handleLoggout}
               >
-                Đăng xuất
+                Log Out
               </li>
             </ul>
           </nav>

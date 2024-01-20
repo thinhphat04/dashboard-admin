@@ -189,7 +189,7 @@ const InfoAdmin = () => {
                   defaultValue={admin.email}
                 />
 
-                <label className="info-page__label">Số điện thoại</label>
+                <label className="info-page__label">Phone number</label>
                 <input
                   className="info-page__input"
                   minLength="10"

@@ -184,7 +184,7 @@ const AccountClientInfo = () => {
                 />
 
                 <label className="account__box-info-title">
-                  Số điện thoại:
+                Phone number:
                 </label>
                 <input
                   className="account__box-info-input"
@@ -194,7 +194,7 @@ const AccountClientInfo = () => {
                 />
 
                 <label className="account__box-info-title">
-                  Địa chỉ liên hệ:
+                Address:
                 </label>
                 <input
                   className="account__box-info-input"

@@ -58,7 +58,7 @@ Validator.isRequired = (selector) => {
   return {
     selector: selector,
     test: (value) => {
-      return value.trim() ? undefined : 'Vui lòng nhập trường này';
+      return value.trim() ? undefined : 'Please enter this field';
     },
   };
 };

@@ -59,7 +59,7 @@ const CustomerPage = () => {
                   <td>Tên tài khoản</td>
                   <td>Họ và tên khách hàng</td>
                   <td>Email</td>
-                  <td>Số điện thoại</td>
+                  <td>Phone number</td>
                   <td>Địa chỉ</td>
                   <td>Chỉnh sửa</td>
                 </tr>

@@ -147,17 +147,16 @@ const CartInfo = () => {
                   window.location.href = '/cart';
                 }}
               >
-                <i className="cart__btn-cancel-icon fa fa-arrow-left"></i>Trở
-                lại giỏ hàng
+                <i className="cart__btn-cancel-icon fa fa-arrow-left"></i>Return to cart
               </button>
-              <h1 className="cart__title">THÔNG TIN ĐẶT HÀNG CỦA BẠN</h1>
+              <h1 className="cart__title">YOUR ORDER INFORMATION</h1>
             </div>
 
             <div className="form cart-info__form" id="form-info-cart">
               <div className="spacer"></div>
 
               <div className="cart-info__group">
-                <label className="cart-info__label">Thông tin cá nhân</label>
+                <label className="cart-info__label">Personal information</label>
                 <div className="form-group">
                   <input
                     style={{ color: 'green', fontWeight: '500' }}
@@ -203,14 +202,14 @@ const CartInfo = () => {
                     className="cart-info__input-radio-describe"
                     style={{ color: 'blue' }}
                   >
-                    Sử dụng thông tin cá nhân mặc định
+                    Use default personal information
                   </label>
                 </div>
               </div>
 
               <div className="cart-info__group">
                 <label className="cart-info__label">
-                  Chọn hình thức nhận hàng
+                Select delivery method
                 </label>
                 <div className="cart-info__input-radio-container">
                   <input
@@ -220,7 +219,7 @@ const CartInfo = () => {
                     onClick={handleCheckMethodReceiveAtStore}
                   ></input>
                   <label className="cart-info__input-radio-describe">
-                    Nhận tại cửa hàng
+                  Pick up in store
                   </label>
                 </div>
 
@@ -232,7 +231,7 @@ const CartInfo = () => {
                     onClick={handleCheckMethodReceiveAtAddress}
                   ></input>
                   <label className="cart-info__input-radio-describe">
-                    Giao hàng tận nơi (Trong vòng 1h)
+                  Delivery to your door (Within 1 hour)
                   </label>
                 </div>
                 <div className="form-group">
@@ -255,13 +254,13 @@ const CartInfo = () => {
                     onClick={handleCheckDefaultAddress}
                   ></input>
                   <label className="cart-info__input-radio-describe cart-info__input-radio-describe--red cart-info__input-radio-describe--disabled">
-                    Sử dụng thông tin địa chỉ mặc định
+                  Use default address information
                   </label>
                 </div>
               </div>
 
               <div className="cart-info__group">
-                <label className="cart-info__label">Ghi chú thêm</label>
+                <label className="cart-info__label">Additional notes</label>
                 <div className="form-group">
                   <input
                     id="note"
@@ -281,7 +280,7 @@ const CartInfo = () => {
         <ul className="block-process" style={{ marginTop: '25px' }}>
           <li className="block-process__item block-process__item--active">
             <i className="block-process__item-icon block-process__item-icon--active fa fa-shopping-cart "></i>
-            <label className="block-process__item-label">Chọn sản phẩm</label>
+            <label className="block-process__item-label">Select product</label>
           </li>
           <i className="block-process__item-arrow block-process__item-arrow--active">
             -
@@ -290,7 +289,7 @@ const CartInfo = () => {
           <li className="block-process__item block-process__item--active">
             <i className="block-process__item-icon fa fa-user block-process__item-icon--active"></i>
             <label className="block-process__item-label">
-              Thông tin đơn hàng
+            Information line
             </label>
           </li>
           <i className="block-process__item-arrow block-process__item-arrow--active">
@@ -299,28 +298,28 @@ const CartInfo = () => {
 
           <li className="block-process__item">
             <i className="block-process__item-icon fa fa-tag"></i>
-            <label className="block-process__item-label">Mã khuyến mãi</label>
+            <label className="block-process__item-label">Promotional code</label>
           </li>
           <i className="block-process__item-arrow">-</i>
 
           <li className="block-process__item">
             <i className="block-process__item-icon fa fa-check"></i>
             <label className="block-process__item-label">
-              Xác nhận đơn hàng
+            Order confirmation
             </label>
           </li>
           <i className="block-process__item-arrow">-</i>
 
           <li className="block-process__item">
             <i className="block-process__item-icon fa fa-credit-card"></i>
-            <label className="block-process__item-label">Thanh toán</label>
+            <label className="block-process__item-label">Payment</label>
           </li>
         </ul>
 
         <div className="cart__control-container">
           <div className="cart__control-total">
             <label className="cart__control-total-label">
-              Tổng tiền giỏ hàng:
+            Total cart amount:
             </label>
             <p className="cart__control-total-price">
               {Number(countTotalPrice).toLocaleString() || 0} đ
@@ -333,7 +332,7 @@ const CartInfo = () => {
                 handleNextStep();
               }}
             >
-              Bước tiếp theo
+              Next step
             </button>
             <button
               className="cart__control-btn cart__control-btn--more"
@@ -342,7 +341,7 @@ const CartInfo = () => {
                 window.location.href = '/cart/';
               }}
             >
-              Quay lại trang thông tin giỏ hàng
+              Return to the shopping cart information page
             </button>
           </div>
         </div>

@@ -30,7 +30,7 @@ const Cart = () => {
           });
       else {
         document.querySelector('.cart__label--empty').innerText =
-          'Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng';
+          'Please log in to add products to cart';
       }
     };
     fetchAPIs();
@@ -165,7 +165,7 @@ const Cart = () => {
                 }, 1000);
               }}
             >
-              Quay lại trang mua sắm
+              Return to shopping page
             </button>
           </div>
 
@@ -177,15 +177,14 @@ const Cart = () => {
                   window.location.href = '/home';
                 }}
               >
-                <i className="cart__btn-cancel-icon fa fa-arrow-left"></i>Quay
-                lại
+                <i className="cart__btn-cancel-icon fa fa-arrow-left"></i>Come back
               </button>
-              <h1 className="cart__title">GIỎ HÀNG CỦA BẠN</h1>
+              <h1 className="cart__title">YOUR CART</h1>
             </div>
 
             <ul className="cart__list">
               {loading ? (
-                <p>Đang kết nối đến server ... </p>
+                <p>Connecting to the server... </p>
               ) : (
                 cartUser.map((p, index) => (
                   <li className="cart__item" key={index}>
@@ -260,7 +259,7 @@ const Cart = () => {
         <div className="cart__control-container">
           <div className="cart__control-total">
             <label className="cart__control-total-label">
-              Tổng tiền giỏ hàng:
+            Total cart amount:
             </label>
             <p className="cart__control-total-price">
               {Number(countTotalPrice).toLocaleString() || 0} đ
@@ -276,7 +275,7 @@ const Cart = () => {
                 }, 2000);
               }}
             >
-              Tiến hành đặt hàng
+              Proceed to order
             </button>
             <button
               className="cart__control-btn cart__control-btn--more"
@@ -284,14 +283,14 @@ const Cart = () => {
                 window.location.href = '/home';
               }}
             >
-              Chọn thêm sản phẩm
+              Select more products
             </button>
             <button
               className="cart__control-btn cart__control-btn--remove-all"
               onClick={handleClickRemoveAll}
             >
               <i className="cart__control-icon fa fa-trash"></i>
-              Xóa tất cả đơn hàng
+              Delete all orders
             </button>
           </div>
         </div>

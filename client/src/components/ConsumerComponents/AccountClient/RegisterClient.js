@@ -96,20 +96,20 @@ const RegisterClient = () => {
               <div className="login-client__container">
                 <form className="form" id="form-1" onSubmit={handleSubmit}>
                   <label className="login-client__label-login">
-                    ĐĂNG KÝ TÀI KHOẢN MỚI
+                  REGISTER A NEW ACCOUNT
                   </label>
 
                   <div className="spacer"></div>
 
                   <div className="form-group">
                     <label htmlFor="username" className="form-label">
-                      Tên đăng nhập
+                    User name
                     </label>
                     <input
                       id="username"
                       name="username"
                       type="text"
-                      placeholder="VD: customer01 ..."
+                      placeholder="Ex: customer01 ..."
                       onChange={(e) => setUsernameRegister(e.target.value)}
                       value={usernameRegister}
                       className="form-control"
@@ -122,13 +122,13 @@ const RegisterClient = () => {
                     style={{ paddingRight: '4px' }}
                   >
                     <label htmlFor="password" className="form-label">
-                      Mật khẩu
+                      Password
                     </label>
                     <input
                       id="password"
                       name="password"
                       type="password"
-                      placeholder="Nhập mật khẩu"
+                      placeholder="Enter password"
                       onChange={(e) => setPasswordRegister(e.target.value)}
                       value={passwordRegister}
                       className="form-control"
@@ -144,12 +144,12 @@ const RegisterClient = () => {
                       htmlFor="password_confirmation"
                       className="form-label"
                     >
-                      Nhập lại mật khẩu
+                      Confirm password
                     </label>
                     <input
                       id="password_confirmation"
                       name="password_confirmation"
-                      placeholder="Nhập lại mật khẩu"
+                      placeholder="Confirm password"
                       type="password"
                       className="form-control"
                     ></input>
@@ -158,13 +158,13 @@ const RegisterClient = () => {
 
                   <div className="form-group">
                     <label htmlFor="fullname" className="form-label">
-                      Họ tên đầy đủ
+                      Full name
                     </label>
                     <input
                       id="fullname"
                       name="fullname"
                       type="text"
-                      placeholder="VD: Lê Ninh ..."
+                      placeholder="Ex: Thinh Phat ..."
                       onChange={(e) => setFullnameRegister(e.target.value)}
                       value={fullnameRegister}
                       className="form-control"
@@ -177,13 +177,13 @@ const RegisterClient = () => {
                     style={{ paddingRight: '4px' }}
                   >
                     <label htmlFor="email" className="form-label">
-                      Địa chỉ email
+                    Email address
                     </label>
                     <input
                       id="email"
                       name="email"
                       type="text"
-                      placeholder="VD: email@domain.com"
+                      placeholder="Ex: email@domain.com"
                       onChange={(e) => setEmailRegister(e.target.value)}
                       value={emailRegister}
                       className="form-control"
@@ -196,14 +196,14 @@ const RegisterClient = () => {
                     style={{ paddingLeft: '4px' }}
                   >
                     <label htmlFor="phone" className="form-label">
-                      Số điện thoại
+                    Phone number
                     </label>
                     <input
                       id="phone"
                       name="phone"
                       type="number"
                       maxLength="10"
-                      placeholder="VD: 0983281932 ..."
+                      placeholder="Ex: 0983281932 ..."
                       onChange={(e) => setPhoneRegister(e.target.value)}
                       value={phoneRegister}
                       className="form-control"
@@ -213,13 +213,13 @@ const RegisterClient = () => {
 
                   <div className="form-group">
                     <label htmlFor="address" className="form-label">
-                      Địa chỉ liên hệ
+                    Address:
                     </label>
                     <input
                       id="address"
                       name="address"
                       type="text"
-                      placeholder="VD: Hàm Nghi, TPHCM"
+                      placeholder="Ex: Ham Nghi, TPHCM"
                       onChange={(e) => setAddressRegister(e.target.value)}
                       value={addressRegister}
                       className="form-control"
@@ -227,12 +227,12 @@ const RegisterClient = () => {
                     <span className="form-message"></span>
                   </div>
 
-                  <button className="login-client__btn">ĐĂNG KÝ NGAY</button>
+                  <button className="login-client__btn">REGISTER NOW</button>
                 </form>
                 <div className="login-client__direct">
                   <div>
                     <label className="login-client__question">
-                      Bạn đã là thành viên của ShopTech?
+                    Already a member of Clinic Online?
                     </label>
                     <a
                       className="login-client__register"
@@ -241,7 +241,7 @@ const RegisterClient = () => {
                         navigate('/login');
                       }}
                     >
-                      Quay lại trang đăng nhập
+                      Return to the Login page
                     </a>
                   </div>
                 </div>
@@ -252,11 +252,11 @@ const RegisterClient = () => {
               <div className="login-client__panel">
                 <div className="login-client__panel-img"></div>
                 <label className="login-client__panel-title">
-                  Trở thành thành viên
+                Become a member
                 </label>
                 <p className="login-client__panel-desb">
-                  Tận hưởng trải nghiệm và ưu đãi tuyệt vời khi trở thành thành
-                  viên của gia đình ShopTECH!!!
+                Enjoy great experiences and incentives when you become a member
+                member of the Clinic Online family!!!
                 </p>
               </div>
               <div className="login-client__panel-controll">

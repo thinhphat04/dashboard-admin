@@ -64,10 +64,10 @@ const Login = () => {
       <ToastMessage />
       <div className="login__logo"></div>
       <div className="login__box">
-        <label className="login__label-login">Đăng nhập tài khoản</label>
+        <label className="login__label-login">Log in to your Account</label>
         <form className="login__form" onSubmit={handleSubmitLogin}>
           <label className="login__label" htmlFor="adminName">
-            Vui lòng nhập tên tài khoản
+          Please enter your account name
           </label>
           <input
             className="login__input"
@@ -85,7 +85,7 @@ const Login = () => {
             className="login__label login__label--password"
             htmlFor="password"
           >
-            Vui lòng nhập mật khẩu
+            Please enter a password
           </label>
           <input
             className="login__input"
@@ -111,9 +111,8 @@ const Login = () => {
           transform: 'translateX(-50%)',
         }}
       >
-        ©️ Bản quyền thuộc ShopTECH - năm 2023 <br />
-        Địa chỉ: 70 Tô Ký, phường Tân Chánh Hiệp. Quận 12, Thành phố Hồ Chí
-        Minh.
+       ©️ Copyright belongs to Clinic Online - 2023 <br />
+      Address: 391 Nam Ky Khoi Nghia, Vo Thi Sau ward. District 3, Ho Chi Minh City.
       </p>
     </div>
   );

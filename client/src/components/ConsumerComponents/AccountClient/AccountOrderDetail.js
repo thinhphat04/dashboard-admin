@@ -121,7 +121,7 @@ const AccountOrderDetail = () => {
                 </label>
                 <div className="order-detail">
                   <div className="order-detail__group">
-                    <label className="order-detail__label">Mã đơn hàng:</label>
+                    <label className="order-detail__label">Code orders:</label>
                     <p
                       style={{ color: 'red', fontWeight: 'bold' }}
                       className="order-detail__content"
@@ -162,14 +162,14 @@ const AccountOrderDetail = () => {
                   <div className="order-detail__group">
                     <label className="order-detail__label">
                       <i className="order-detail__label-icon fa fa-phone"></i>
-                      Số điện thoại:
+                      Phone number:
                     </label>
                     <p className="order-detail__content">{order.phone}</p>
                   </div>
                   <div className="order-detail__group">
                     <label className="order-detail__label">
                       <i className="order-detail__label-icon fa fa-envelope"></i>
-                      Địa chỉ email:
+                      Email address:
                     </label>
                     <p className="order-detail__content">{order.email}</p>
                   </div>

@@ -170,7 +170,7 @@ const Tablet = () => {
           </div>
 
           <label className="product-client__title-brand">
-            THƯƠNG HIỆU HÀNG ĐẦU
+          TOP BRANDS
           </label>
           <div className="product-brand-list">
             <div className="product-client__brand">
@@ -205,7 +205,7 @@ const Tablet = () => {
             </div>
           </div>
 
-          <label className="product-client__title-brand">Lọc sản phẩm</label>
+          <label className="product-client__title-brand">Filter products</label>
           <FillterByPrice
             minPrice={0}
             maxPrice={100000000}
@@ -266,9 +266,8 @@ const Tablet = () => {
       </div>
       <Footer />
       <p className="app-copyright">
-        ©️ Bản quyền thuộc ShopTECH - năm 2023 <br />
-        Địa chỉ: 70 Tô Ký, phường Tân Chánh Hiệp. Quận 12, Thành phố Hồ Chí
-        Minh.
+      ©️ Copyright belongs to Clinic Online - 2023 <br />
+      Address: 391 Nam Ky Khoi Nghia, Vo Thi Sau ward. District 3, Ho Chi Minh City.
       </p>
     </>
   );

@@ -105,7 +105,7 @@ const InfoCustomer = () => {
                 <label className="info-page__label">Email</label>
                 <input className="info-page__input" defaultValue={user.email} />
 
-                <label className="info-page__label">Số điện thoại</label>
+                <label className="info-page__label">Phone number</label>
                 <input className="info-page__input" defaultValue={user.phone} />
 
                 <label className="info-page__label">Địa chỉ</label>

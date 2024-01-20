@@ -257,7 +257,7 @@ const Home = () => {
 
           <div id="home__flash-sale">
             <div className="home__flash-sale-label">
-              Khuyến mãi cực <span>HOT</span> - 🔥🔥🔥
+            Extremely  Promotion <span>HOT</span> - 🔥🔥🔥
             </div>
             <div className="home__flash-sale-banner"></div>
             <div className="home__flash-sale-container">
@@ -265,10 +265,10 @@ const Home = () => {
                 <div className="home__flash-sale-background"></div>
                 <div className="home__flash-sale-header-col">
                   <div className="home__flash-sale-title">
-                    Giờ vàng săn DEAL
+                  Golden hour for DEAL hunting
                   </div>
                   <div className="home__flash-sale-countdown">
-                    Kết thúc trong:
+                  Ends in:
                   </div>
                   <div className="home__flash-sale-countdown-day"></div>
                   <span className="home__flash-sale-countdown-sepetate">:</span>
@@ -280,10 +280,10 @@ const Home = () => {
                 </div>
                 <div className="home__flash-sale-header-col">
                   <div className="home__flash-sale-time">
-                    Thời gian khuyến mãi
+                  Promotion time
                   </div>
                   <div className="home__flash-sale-time-valid">
-                    {timeStart}/7/2023 - {timeEnd}/7/2023
+                    {timeStart}/01/2024 - {timeEnd}/02/2024
                   </div>
                 </div>
               </div>
@@ -354,7 +354,7 @@ const Home = () => {
           </div>
 
           <div id="home__featured">
-            <div className="home__featured-label">SẢN PHẨM NỔI BẬT</div>
+            <div className="home__featured-label">FEATURED PRODUCTS</div>
             <div
               className="home__featured-banner-phone"
               onClick={(e) => {
@@ -367,20 +367,17 @@ const Home = () => {
                 handleLoadingPage(1, `/product/smartphone`);
               }}
             >
-              ĐIỆN THOẠI
+              MEIDCAL
             </div>
             <div className="home__featured-brand-list">
-              <button className="home__product-brand-item">Apple</button>
-              <button className="home__product-brand-item">Samsung</button>
-              <button className="home__product-brand-item">Xiaomi</button>
-              <button className="home__product-brand-item">Oppo</button>
-              <button className="home__product-brand-item">Vivo</button>
-              <button className="home__product-brand-item">Huewei</button>
-              <button className="home__product-brand-item">Realme</button>
+              <button className="home__product-brand-item">Pharmacist gives free consultation</button>
+              <button className="home__product-brand-item">Good cheap medicine</button>
+              <button className="home__product-brand-item">100% genuine medicine</button>
+              <button className="home__product-brand-item">Enough correct medicine</button>
             </div>
             <ul className="home__featured-list">
               {loading ? (
-                <p>Đang kết nối đến server ... </p>
+                <p>Connecting to the server... </p>
               ) : (
                 products.map((product, index) => (
                   <li
@@ -437,7 +434,7 @@ const Home = () => {
                 handleLoadingPage(1, `/product/tablet`);
               }}
             >
-              MÁY TÍNH BẢNG
+              CSIENTIFIC
             </div>
             <div className="home__featured-brand-list">
               <button className="home__product-brand-item">Apple</button>
@@ -507,7 +504,7 @@ const Home = () => {
                 handleLoadingPage(1, `/product/laptop`);
               }}
             >
-              MÁY TÍNH XÁCH TAY
+              EDUCATION
             </div>
             <div className="home__featured-brand-list">
               <button className="home__product-brand-item">
@@ -640,9 +637,8 @@ const Home = () => {
       </div>
       <Footer />
       <p className="app-copyright">
-        ©️ Bản quyền thuộc ShopTECH - năm 2023 <br />
-        Địa chỉ: 70 Tô Ký, phường Tân Chánh Hiệp. Quận 12, Thành phố Hồ Chí
-        Minh.
+      ©️ Copyright belongs to Clinic Online - 2023 <br />
+      Address: 391 Nam Ky Khoi Nghia, Vo Thi Sau ward. District 3, Ho Chi Minh City.
       </p>
     </>
   );

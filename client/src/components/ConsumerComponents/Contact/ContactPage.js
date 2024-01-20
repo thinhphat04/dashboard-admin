@@ -82,28 +82,28 @@ const ContactPage = () => {
           <ul className="contact__info-list">
             <li className="contact__info-item">
               <i className="contact__info-item-icon fa fa-map-marker"></i>
-              <label className="contact__info-item-title">Trụ sở chính</label>
+              <label className="contact__info-item-title">Headquarters</label>
               <p className="contact__info-item-content">
-                70 Tô Ký, phường Tân Chánh Hiệp, quận 12, TPHCM
+              391A Nam KY Khoi Nghia, Vo Thi Sau Ward, District 3, Ho Chi Minh City
               </p>
             </li>
 
             <li className="contact__info-item">
               <i className="contact__info-item-icon fa fa-phone"></i>
-              <label className="contact__info-item-title">Đường dây nóng</label>
+              <label className="contact__info-item-title">Hotline</label>
               <p className="contact__info-item-content">(+84) 38 551 1320</p>
             </li>
 
             <li className="contact__info-item">
               <i className="contact__info-item-icon fa fa-envelope"></i>
-              <label className="contact__info-item-title">Thư điện tử</label>
-              <p className="contact__info-item-content">contact@shoptech.uth</p>
+              <label className="contact__info-item-title">Email</label>
+              <p className="contact__info-item-content">contact@ClinicOnline.uth</p>
             </li>
 
             <li className="contact__info-item">
               <i className="contact__info-item-icon fa fa-headphones"></i>
-              <label className="contact__info-item-title">Tổng đài viên</label>
-              <p className="contact__info-item-content">Hỗ trợ 24/7</p>
+              <label className="contact__info-item-title">Operator</label>
+              <p className="contact__info-item-content">24/7 support</p>
             </li>
 
             <li className="contact__info-item">
@@ -114,7 +114,7 @@ const ContactPage = () => {
           </ul>
 
           <div className="contact__box">
-            <label className="contact__box-title">LIÊN HỆ VỚI SHOPTECH</label>
+            <label className="contact__box-title">CONTACT ONLINE CLINIC</label>
             <form
               ref={form}
               className="contact__box-form"
@@ -129,7 +129,7 @@ const ContactPage = () => {
                 name="name"
                 className="contact__box-form-input"
                 type="text"
-                placeholder="Điền họ tên của bạn ..."
+                placeholder="Fill in your full name..."
                 onChange={(e) => setName(e.target.value)}
                 value={name}
               />
@@ -138,7 +138,7 @@ const ContactPage = () => {
                 className="contact__box-form-input"
                 type="email"
                 name="email"
-                placeholder="Điền email ..."
+                placeholder="Name email ..."
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
               />
@@ -152,35 +152,35 @@ const ContactPage = () => {
                 value={type}
               >
                 <option className="contact__box-form-option" value="...">
-                  Chọn vấn đề góp ý
+                Select an issue to comment on
                 </option>
                 <option
                   className="contact__box-form-option"
                   value="Vấn đề tài khoản"
                 >
-                  Vấn đề tài khoản
+                  Account problem
                 </option>
                 <option
                   className="contact__box-form-option"
                   value="Vấn đề khuyến mãi"
                 >
-                  Vấn đề khuyến mãi
+                  Promotion problem
                 </option>
                 <option
                   className="contact__box-form-option"
                   value="Cải thiện hệ thống"
                 >
-                  Cải thiện hệ thống
+                  System improvements
                 </option>
                 <option
                   className="contact__box-form-option"
                   value="Vấn đề khác"
                 >
-                  Vấn đề khác
+                  Other problems
                 </option>
               </select>
 
-              <label className="contact__box-form-label">Nội dung</label>
+              <label className="contact__box-form-label">Content</label>
 
               <textarea
                 required
@@ -190,7 +190,7 @@ const ContactPage = () => {
                 onChange={(e) => setContent(e.target.value)}
                 value={content}
               />
-              <button className="contact__box-form-btn">Gửi góp ý</button>
+              <button className="contact__box-form-btn">Send comments</button>
             </form>
           </div>
         </div>
@@ -198,9 +198,8 @@ const ContactPage = () => {
 
       <Footer />
       <p className="app-copyright">
-        ©️ Bản quyền thuộc ShopTECH - năm 2023 <br />
-        Địa chỉ: 70 Tô Ký, phường Tân Chánh Hiệp. Quận 12, Thành phố Hồ Chí
-        Minh.
+      ©️ Copyright belongs to Clinic Online - 2023 <br />
+        Address: 391A Nam KY Khoi Nghia, Vo Thi Sau Ward, District 3, Ho Chi Minh City
       </p>
     </>
   );

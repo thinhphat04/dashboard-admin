@@ -75,11 +75,11 @@ const LoginClient = () => {
               <div className="login-client__panel">
                 <div className="login-client__panel-img"></div>
                 <label className="login-client__panel-title">
-                  Trở thành thành viên
+                  Become a member
                 </label>
                 <p className="login-client__panel-desb">
-                  Tận hưởng trải nghiệm và ưu đãi tuyệt vời khi trở thành thành
-                  viên của gia đình ShopTECH!!!
+                Enjoy great experiences and incentives when you become a member
+                member of the Clinic Online family!!!
                 </p>
               </div>
               <div className="login-client__panel-controll">
@@ -94,10 +94,10 @@ const LoginClient = () => {
               <div className="login-client__container">
                 <form className="login-client__form" onSubmit={handleSubmit}>
                   <label className="login-client__label-login">
-                    Đăng nhập tài khoản
+                  Log in to your Account
                   </label>
                   <label className="login-client__label" htmlFor="username">
-                    Vui lòng nhập tên tài khoản
+                  Please enter your account name
                   </label>
                   <input
                     type="text"
@@ -113,7 +113,7 @@ const LoginClient = () => {
                   />
 
                   <label className="login-client__label" htmlFor="password">
-                    Vui lòng nhập mật khẩu
+                  Please enter a password
                   </label>
                   <input
                     type="password"
@@ -128,12 +128,12 @@ const LoginClient = () => {
                     placeholder="Password ..."
                   />
                   <a href="" className="login-client__forgot">
-                    Bạn quên mật khẩu?
+                  You forgot your password?
                   </a>
-                  <button className="login-client__btn">ĐĂNG NHẬP</button>
+                  <button className="login-client__btn">LOGIN</button>
                 </form>
                 <p className="login-client__label-or">
-                  __________hoặc__________
+                  __________Or__________
                 </p>
 
                 <div className="login-client__direct">
@@ -172,7 +172,7 @@ const LoginClient = () => {
                   </button>
                   <div>
                     <label className="login-client__question">
-                      Nếu bạn chưa có tài khoản trước đây?
+                    If you have not had an account before?
                     </label>
                     <a
                       className="login-client__register"
@@ -185,7 +185,7 @@ const LoginClient = () => {
                         }, 1000);
                       }}
                     >
-                      Đăng ký ngay
+                      Register now
                     </a>
                   </div>
                 </div>

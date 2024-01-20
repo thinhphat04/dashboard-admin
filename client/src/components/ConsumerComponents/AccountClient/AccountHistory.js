@@ -155,7 +155,7 @@ const AccountHistory = () => {
                     <thead>
                       <tr className="table__thead-primary">
                         <td>Thời gian</td>
-                        <td>Mã đơn hàng</td>
+                        <td>Code orders</td>
                         <td>Sản phẩm</td>
                         <td>Tổng tiền</td>
                         <td>Tình trạng</td>
